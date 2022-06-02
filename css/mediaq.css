@@ -1,0 +1,42 @@
+/* Media Queries */
+
+/* xs (for phones - screens less than 577px wide) */
+@media(max-width:576px) {
+
+    /* Menu Section */
+
+    #menu {
+        width: 50% !important;
+    }
+
+    /* Contact Section */
+
+    #contact h2 {
+        text-align: left !important;
+    }
+
+}
+
+
+/* sm (for tablets - screens equal to or greater than 577px wide and less than 768px wide) */
+@media(min-width:577px) and (max-width:767px) {
+
+    /* Contact Section */
+
+    #contact #submit {
+        text-align: left !important;
+    }
+    
+}
+
+
+/* md (for small laptops - screens equal to or greater than 768px wide and less than 991px wide) */
+@media(min-width:768px) and (max-width:991px){
+
+    /* Menu Section */
+
+    #menu {
+        width: 40% !important;
+    }
+
+}

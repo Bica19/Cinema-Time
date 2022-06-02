@@ -1,0 +1,83 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/index_styles.css">
+  <link rel="stylesheet" href="css/mediaq.css">
+</head>
+
+<body>
+
+  <section id="menu" class="w-25 h-100 position-fixed">
+    <div class="menuRight w-25 h-100 py-4 d-flex flex-wrap align-content-between">
+      <div class="w-100 d-flex justify-content-center">
+        <img class="img-fluid w-50" src="./images/logo.png">
+      </div>
+      <div class="w-100 d-flex justify-content-center">
+        <i class="menuTogg fas fa-bars fa-2x"></i>
+      </div>
+      <div class="w-100 d-flex justify-content-center flex-wrap">
+        <div>
+          <i class="fas fa-globe d-block"></i>
+          <i class="fas fa-share-alt d-block mt-3"></i>
+        </div>
+      </div>
+    </div>
+    <div class="menuLeft w-75 h-100 py-4 d-flex flex-wrap align-content-between text-white">
+      <ul class="menuOpt w-100">
+        <li class="mb-3 one">Now playing</li>
+        <li class="mb-3 two">Popular</li>
+        <li class="mb-3 three">Top Rated</li>
+        <li class="mb-3 four">Trending</li>
+        <li class="mb-3 five">Upcoming</li>
+        <li class="mb-3 six"><a href="#contact">Contact Us</a></li>
+      </ul>
+      <div class="social w-100 px-3">
+        <i class="fab fa-facebook-f ml-3"></i>
+        <i class="fab fa-twitter ml-3"></i>
+        <i class="fas fa-globe ml-3"></i>
+        <p class="para mt-3">Copyright © 2019 All Rights Reserved.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="search" class="container p-5">
+    <div class="d-flex justify-content-center mx-auto carrier">
+      <input onkeyup="searchTitles(this.value)" type="text" class="w-50 mr-3" placeholder="get movies by word...">
+      <input onkeyup="searchFilms(this.value)" type="text" class="w-50" placeholder="search...">
+    </div>
+  </section>
+
+  <section id="cinema" class="container">
+    <div id="films" class="row">
+      
+    </div>
+  </section>
+
+  <section id="contact" class="container p-5">
+    <h2 class="text-white ml-5 mb-5">Contac Us...</h2>
+    <div class="row d-flex justify-content-center">
+      <input type="text" class="name col-md-5 mr-4 mt-3" placeholder="Enter Your Name">
+      <input type="email" class="mail col-md-5 mr-4 mt-3" placeholder="Enter Email">
+      <div class="alert alert-danger mailAlert col-md-5 mr-4" role="alert">Enter Valid Email</div>
+      <div class="alert alert-danger nameAlert col-md-5 mr-4" role="alert">Your Name is not valid</div>
+      <input type="text" class="phone col-md-5 mr-4 mt-3" placeholder="Enter Phone">
+      <input type="text" class="age col-md-5 mr-4 mt-3" placeholder="Enter Age">
+      <div class="alert alert-danger ageAlert col-md-5 mr-4" role="alert">Enter Valid Age</div>
+      <div class="alert alert-danger phoneAlert col-md-5 mr-4" role="alert">Enter Valid Phone</div>
+      <input type="password" class="pass col-md-5 mr-4 mt-3" placeholder="Enter Password">
+      <input type="password" class="repass col-md-5 mr-4 mt-3" placeholder="Enter RePassword">
+      <div class="alert alert-danger passAlert col-md-5 mr-4" role="alert">Enter Valid Password *Minimum eight characters, at least one letter and one number*</div>
+      <div class="alert alert-danger repassAlert col-md-5 mr-4" role="alert">Enter Valid Repassword</div>
+    </div>
+    <button id="submit" class="btn btn-outline-danger ml-5 mt-3" disabled>Submit</button>
+  </section>  
+
+  <script src="js/jquery-3.5.1.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

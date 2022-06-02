@@ -1,0 +1,104 @@
+* {
+    font-family: 'Segoe UI light';
+}
+body {
+    background-color: #0d0d0d;
+}
+
+/* Menu Section */
+
+#menu {
+    z-index: 100;
+}
+#menu i {
+    cursor: pointer;
+}
+#menu .menuRight {
+    float: right;
+    background-color: #f6f6f6;
+}
+#menu .menuLeft {
+    float: left;
+    background-color: #0d0d0d;
+}
+#menu .menuOpt {
+    list-style-type: none;
+    position: relative;
+    height: 70%;
+}
+#menu .menuOpt li {
+    position: absolute;
+    top: 200%;
+}
+#menu .menuOpt .six a {
+    text-decoration: none;
+    color: white;
+}
+#menu .menuOpt li , #menu .social i , #menu .menuOpt .six a {
+    cursor: pointer;
+    transition: 0.5s;
+}
+#menu .menuOpt li:hover , .social i:hover , #menu .menuOpt .six a:hover {
+    color: #ff655c;
+}
+#menu .para {
+    color: #999;
+}
+
+/* Search Section */
+
+#search .carrier {
+    width: 90%;
+}
+#search input , #contact input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #f6f6f6;
+    text-align: center;
+    padding: 10px;
+    height: 40px;
+}
+#search input:focus , #contact input:focus {
+    outline: none;
+    color: #999;
+}
+.blurring {
+    border: 3px solid #0a294a !important;
+}
+
+/* Cinema Section */
+
+#cinema .shadow {
+    box-shadow: 0 0.5rem 1rem rgba(58, 43, 43, 0.15) !important;
+}
+#cinema .onefilm {
+    overflow: hidden;
+    border-radius: 1%;
+}
+#cinema .onefilm:hover .filmCap {
+    overflow: hidden;
+    top: 0%;
+    transition: top 1.3s ease-in-out;
+}
+#cinema .filmCap {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.7);
+    transition: top 1.3s ease-in-out;
+}
+#cinema .filmCap h2 {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+}
+#cinema .filmCap p {
+    font-weight: 800;
+}
+
+/* Contact Section */
+
+#contact .alert {
+    display: none;
+}
